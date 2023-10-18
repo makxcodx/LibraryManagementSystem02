@@ -12,7 +12,7 @@ public class Book implements Displayable{
     }
 
     public void toString(int counter, String title, String author, String ISBN, boolean isAvailabilityStatus){
-            System.out.print(counter + " . Title: " + title + " ,Author: " + author + " , ISBN: "
+            System.out.println(counter + " . Title: " + title + " ,Author: " + author + " , ISBN: "
                     + ISBN + " , Available: " + isAvailabilityStatus);
     }
 

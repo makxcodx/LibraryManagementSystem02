@@ -7,9 +7,9 @@ public class Library{
         boolean checkBookInLibrary = checkBookAvailability(book);
         if (!checkBookInLibrary) {
             bookCollection.add(book);
-            System.out.print("Book added to Library");
+            System.out.println("Book added to Library");
         }else{
-            System.out.print("Book already in Library");
+            System.out.println("Book already in Library");
         }
     }
 
@@ -31,8 +31,8 @@ public class Library{
     }
 
     public void displayAvailableBooks() {
+        int counter = 1;
         for (Book book : bookCollection) {
-            int counter = 1;
             String title = book.getTitle();
             String author = book.getAuthor();
             String ISBN = book.getISBN();
